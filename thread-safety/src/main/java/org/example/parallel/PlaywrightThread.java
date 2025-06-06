@@ -19,12 +19,13 @@ public class PlaywrightThread extends Thread {
     @Override
     public void run() {
         try (Playwright playwright = Playwright.create()) {
+            System.out.println("Start execution in browser " + browserName);
             BrowserType browserType = getBrowserType(playwright, browserName);
             Browser browser = browserType.launch();
             Page page = browser.newPage();
             page.navigate("https://playwright.dev/");
-            System.out.println("Browser name = " + browserName + " | Page title = " + page.title());
             assertThat(page).hasTitle(Pattern.compile("Playwright"));
+            System.out.println("Execution done in browser " + browserName);
         }
     }
 

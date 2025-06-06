@@ -9,11 +9,12 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 public class SingleThreadedExample {
     public static void main(String[] args) {
         try (Playwright playwright = Playwright.create()) {
+            System.out.println("Start execution in browser Chrome");
             Browser browser = playwright.chromium().launch();
             Page page = browser.newPage();
             page.navigate("https://playwright.dev/");
-            System.out.println("Page title = " + page.title());
             assertThat(page).hasTitle(Pattern.compile("Playwright"));
+            System.out.println("Execution done in browser Chrome");
         }
     }
 }
