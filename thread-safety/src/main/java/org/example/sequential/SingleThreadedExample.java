@@ -1,4 +1,4 @@
-package org.example;
+package org.example.sequential;
 
 import com.microsoft.playwright.*;
 

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.parallel;
 
 import static java.util.Arrays.asList;
 
