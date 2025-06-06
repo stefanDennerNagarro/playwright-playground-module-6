@@ -12,6 +12,7 @@
         <module>thread-safety</module>
         <module>junit-sequential</module>
         <module>junit-parallel</module>
+        <module>junit-parallel-fixtures</module>
     </modules>
 
     <properties>
