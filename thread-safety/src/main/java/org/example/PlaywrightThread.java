@@ -5,6 +5,10 @@ import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
+import java.util.regex.Pattern;
+
+import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
+
 public class PlaywrightThread extends Thread {
     private final String browserName;
 
@@ -20,6 +24,7 @@ public class PlaywrightThread extends Thread {
             Page page = browser.newPage();
             page.navigate("https://playwright.dev/");
             System.out.println("Browser name = " + browserName + " | Page title = " + page.title());
+            assertThat(page).hasTitle(Pattern.compile("Playwright"));
         }
     }
 
