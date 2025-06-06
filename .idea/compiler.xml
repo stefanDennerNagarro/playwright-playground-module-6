@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="junit-parallel-custom-fixtures" />
         <module name="junit-parallel-fixtures" />
         <module name="junit-parallel" />
         <module name="junit-sequential" />

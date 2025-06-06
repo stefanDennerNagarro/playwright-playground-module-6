@@ -13,6 +13,7 @@
         <module>junit-sequential</module>
         <module>junit-parallel</module>
         <module>junit-parallel-fixtures</module>
+        <module>junit-parallel-custom-fixtures</module>
     </modules>
 
     <properties>
