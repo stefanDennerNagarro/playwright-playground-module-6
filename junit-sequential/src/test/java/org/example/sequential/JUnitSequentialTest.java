@@ -46,25 +46,33 @@ public class JUnitSequentialTest {
 
     @Test
     void shouldMatchPlaywrightTitle() {
+        System.out.println("Start execution of test shouldMatchPlaywrightTitle");
         page.navigate("https://playwright.dev/");
         assertThat(page).hasTitle(Pattern.compile("Playwright"));
+        System.out.println("Execution done for test shouldMatchPlaywrightTitle");
     }
 
     @Test
     void shouldContainPlaywrightContent() {
+        System.out.println("Start execution of test shouldContainPlaywrightContent");
         page.navigate("https://playwright.dev/");
         assertThat(page.locator("body")).containsText("Playwright");
+        System.out.println("Execution done for test shouldContainPlaywrightContent");
     }
 
     @Test
     void shouldMatchJUnit5Title() {
+        System.out.println("Start execution of test shouldMatchJUnit5Title");
         page.navigate("https://junit.org/junit5/");
         assertThat(page).hasTitle(Pattern.compile("JUnit 5"));
+        System.out.println("Execution done for test shouldMatchJUnit5Title");
     }
 
     @Test
     void shouldContainJUnit5Content() {
+        System.out.println("Start execution of test shouldContainJUnit5Content");
         page.navigate("https://junit.org/junit5/");
         assertThat(page.locator("body")).containsText("JUnit 5");
+        System.out.println("Execution done for test shouldContainJUnit5Content");
     }
 }

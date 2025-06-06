@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>junit</artifactId>
+    <artifactId>junit-sequential</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

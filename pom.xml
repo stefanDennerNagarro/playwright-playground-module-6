@@ -10,7 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>thread-safety</module>
-        <module>junit</module>
+        <module>junit-sequential</module>
+        <module>junit-parallel</module>
     </modules>
 
     <properties>
