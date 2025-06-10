@@ -1,6 +1,6 @@
 # Playwright Playground
 ## Module 6 - Thread Safety and Parallel Execution
-This repo consists of examples regarding multi threading and parallel test execution of playwright tests with JUnit 5.
+This repo consists of examples regarding multi threading and parallel test execution of Playwright tests in Java and JUnit 5.
 
 The examples are split into modules:
 * [thread-safety](/thread-safety)
