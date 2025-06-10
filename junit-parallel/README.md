@@ -7,7 +7,7 @@ Example test classes are:
  * [ParallelPlaywrightPageTest.java](/junit-parallel/src/test/java/org/example/parallel/ParallelPlaywrightPageTest.java)
 
 The tests are the same as in the [junit-sequential example](../junit-sequential/), but split up in two classes.
-Each class will be executed parallelly. The test within a class will be executed sequentially.
+Each class will be executed parallelly. The tests within a class will be executed sequentially.
 
 All tests are executed in the Chromium browser.
 
