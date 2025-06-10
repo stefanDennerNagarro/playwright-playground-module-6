@@ -15,10 +15,10 @@ cd thread-safety
 mvn compile exec:java -D exec.mainClass="org.example.sequential.SingleThreadedExample"
 ```
 
-This will only run Playwright in the Chrome browser. The output will be like so:
+This will only run Playwright in the Chromium browser. The output will be like so:
 ```
-Start execution in browser Chrome
-Execution done in browser Chrome
+Start execution in browser chromium
+Execution done in browser chromium
 ```
 
 #### MultiThreadedExample
@@ -28,7 +28,7 @@ cd thread-safety
 mvn compile exec:java -D exec.mainClass="org.example.parallel.MultiThreadedExample"
 ```
 
-This will start 3 threads. Every thread runs Playwright in a different browser.
+This will start 3 threads, where every thread runs Playwright in a different browser (Webkit, Chromium, Firefox).
 
 The output will be like so (the order of the output can vary due to the multi-threaded execution):
 ```
