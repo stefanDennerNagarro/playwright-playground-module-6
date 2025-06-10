@@ -1,7 +1,7 @@
 # Playwright Playground
 ## Module 6 - Thread Safety and Parallel Execution
 ### JUnit sequential execution
-This example runs Playwright tests with JUnit5.
+This example runs Playwright tests with JUnit5 sequentially. See configuration in the file [junit-platform.properties](/junit-sequential/src/test/resources/junit-platform.properties).
 Example test class can be found in the class [JUnitSequentialTest](/junit-sequential/src/test/java/org/example/sequential/JUnitSequentialTest.java).
 
 4 simple tests are implemented:

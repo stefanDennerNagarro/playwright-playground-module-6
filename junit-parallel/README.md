@@ -1,10 +1,12 @@
 # Playwright Playground
 ## Module 6 - Thread Safety and Parallel Execution
 ### JUnit parallel execution
-This example runs Playwright tests with JUnit5 in parallel.
+This example runs Playwright tests with JUnit5 in parallel. See configuration in the file [junit-platform.properties](/junit-parallel/src/test/resources/junit-platform.properties).
 Example test classes are:
  * [ParallelJUnitPageTest](/junit-parallel/src/test/java/org/example/parallel/ParallelJUnitPageTest.java)
- * [ParallelPlaywrightPageTest.java](/junit-parallel/src/test/java/org/example/parallel/ParallelPlaywrightPageTest.java)
+ * [ParallelPlaywrightPageTest](/junit-parallel/src/test/java/org/example/parallel/ParallelPlaywrightPageTest.java)
+
+Both classes use the same base class to share Playwright related resources called [TestFixtures](/junit-parallel/src/test/java/org/example/parallel/TestFixtures.java). 
 
 The tests are the same as in the [junit-sequential example](../junit-sequential/), but split up in two classes.
 Each class will be executed parallelly. The tests within a class will be executed sequentially.
