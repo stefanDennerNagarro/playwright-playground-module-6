@@ -43,8 +43,8 @@ The output will be like so:
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running org.examples.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
-[INFO] Running org.examples.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
+[INFO] Running org.example.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
+[INFO] Running org.example.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
 Start execution of test shouldContainJUnit5Content
 Start execution of test shouldContainPlaywrightContent
 Execution done for test shouldContainPlaywrightContent
@@ -52,9 +52,9 @@ Start execution of test shouldMatchPlaywrightTitle
 Execution done for test shouldMatchPlaywrightTitle
 Execution done for test shouldContainJUnit5Content
 Start execution of test shouldMatchJUnit5Title
-[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.40 s -- in org.examples.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.40 s -- in org.example.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
 Execution done for test shouldMatchJUnit5Title
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.53 s -- in org.examples.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.53 s -- in org.example.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
 [INFO]
 [INFO] Results:
 [INFO]
