@@ -1,8 +1,8 @@
-package org.examples.parallel.customfixtures;
+package org.example.parallel.customfixtures;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.junit.UsePlaywright;
-import org.examples.parallel.customfixtures.customoptions.JUnitPageOptions;
+import org.example.parallel.customfixtures.customoptions.JUnitPageOptions;
 import org.junit.jupiter.api.Test;
 
 import java.util.regex.Pattern;
