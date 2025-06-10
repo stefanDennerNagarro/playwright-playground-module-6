@@ -9,10 +9,10 @@ Example test classes are:
 
 The setup is the same as in the [junit-parallel-fixtures example](../junit-parallel-fixtures/), but two custom options are implemented using the `OptionsFactory` to provide pre-configured Fixtures for test execution:
 
-* [JUnitPageOptions](/junit-parallel-custom-fixtures/src/test/java/org/example/parallel/customfixtures/customfixtures/JUnitPageOptions.java)
+* [JUnitPageOptions](/junit-parallel-custom-fixtures/src/test/java/org/example/parallel/customfixtures/customoptions/JUnitPageOptions.java)
   * Run browser in headed mode (the browser window will be visible)
   * Use the URL https://junit.org/junit5 as base URL for the page in the test
-* [PlaywrightPageOptions](/junit-parallel-custom-fixtures/src/test/java/org/example/parallel/customfixtures/customfixtures/PlaywrightPageOptions.java)
+* [PlaywrightPageOptions](/junit-parallel-custom-fixtures/src/test/java/org/example/parallel/customfixtures/customoptions/PlaywrightPageOptions.java)
   * Run browser in headed mode (the browser window will be visible)
   * Use the URL https://playwright.dev as base URL for the page in the test
 
@@ -43,19 +43,19 @@ The output will be like so:
 [INFO] -------------------------------------------------------
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
-[INFO] Running org.example.parallel.fixtures.ParallelWithFixtureJUnitPageTest
-[INFO] Running org.example.parallel.fixtures.ParallelWithFixturePlaywrightPageTest
-Start execution of test shouldContainPlaywrightContent
+[INFO] Running org.examples.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
+[INFO] Running org.examples.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
 Start execution of test shouldContainJUnit5Content
+Start execution of test shouldContainPlaywrightContent
 Execution done for test shouldContainPlaywrightContent
 Start execution of test shouldMatchPlaywrightTitle
 Execution done for test shouldMatchPlaywrightTitle
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.54 s -- in org.example.parallel.fixtures.ParallelWithFixturePlaywrightPageTest
 Execution done for test shouldContainJUnit5Content
 Start execution of test shouldMatchJUnit5Title
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.40 s -- in org.examples.parallel.customfixtures.ParallelWithCustomFixturePlaywrightPageTest
 Execution done for test shouldMatchJUnit5Title
-[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.73 s -- in org.example.parallel.fixtures.ParallelWithFixtureJUnitPageTest
-[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.53 s -- in org.examples.parallel.customfixtures.ParallelWithCustomFixtureJUnitPageTest
+[INFO]
 [INFO] Results:
 [INFO]
 [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
