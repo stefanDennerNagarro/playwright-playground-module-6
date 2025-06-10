@@ -3,8 +3,8 @@
 ### Thread-safety
 This example runs Playwright in different browsers in a java program.
 There are 2 examples:
-* [SingleThreadedExample](/src/main/java/org/example/sequential/SingleThreadedExample)
-* [MulitThreadedExample](/src/main/java/org/example/parallel/MultiThreadedExample)
+* [SingleThreadedExample](/thread-safety/src/main/java/org/example/sequential/SingleThreadedExample.java)
+* [MulitThreadedExample](/thread-safety/src/main/java/org/example/parallel/MultiThreadedExample.java)
 
 All examples open the Playwright homepage at https://playwright.dev using different browsers.
 
