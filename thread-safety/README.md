@@ -30,7 +30,7 @@ mvn compile exec:java -D exec.mainClass="org.example.parallel.MultiThreadedExamp
 
 This will start 3 threads, where every thread runs Playwright in a different browser (Webkit, Chromium, Firefox).
 
-The output will be like so (the order of the output can vary due to the multi-threaded execution):
+The output will be like so:
 ```
 Start execution in browser webkit
 Start execution in browser chromium
@@ -39,3 +39,5 @@ Execution done in browser webkit
 Execution done in browser chromium
 Execution done in browser firefox
 ```
+
+Note that the order of the output can vary between runs due to the multi-threaded execution.
