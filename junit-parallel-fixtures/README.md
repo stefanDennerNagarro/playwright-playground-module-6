@@ -8,7 +8,7 @@ Example test classes are:
 * [ParallelWithFixturePlaywrightPageTest](/junit-parallel-fixtures/src/test/java/org/example/parallel/fixtures/ParallelWithFixturePlaywrightPageTest.java)
 
 The tests and test classes are the same as in the [junit-parallel example](../junit-parallel/), but without the need of a TestFixture base class.
-Instead, the `@Playwright` annotation is used to automate the handling of Playwright related resources.
+Instead, the `@Playwright` annotation is used to automate the handling of Playwright related resources and enabling the use of Fixtures.
 
 To execute the tests, go to the folder and run the following mvn command:
 ```
