@@ -9,4 +9,4 @@ The examples are split into modules:
 * [junit-parallel-fixtures](/junit-parallel-fixtures)
 * [junit-parallel-custom-fixtures](/junit-parallel-custom-fixtures)
 
-Every module has its own README files, explaining how to execute the tests. 
+Every module has its own README file, explaining how to build the module and execute the Playwright tests. 
